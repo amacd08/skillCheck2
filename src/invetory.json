@@ -1,0 +1,21 @@
+
+    {
+      "name":'jacket',
+      "price": 50,
+      "image_url": 'https://hillcity.gap.com/webcontent/0016/660/330/cn16660330.jpg'
+    },
+    {
+      "name":'shoes',
+      "price": 75,
+      "image_url": 'https://media03.toms.com/static/www/images/product/MENS/ATG/SIDE/10011588-GreyLinenMensPreston-P-1450x1015.jpg'
+    },
+    {
+      "name":'shoes',
+      "price": 75,
+      "image_url": 'https://media03.toms.com/static/www/images/product/MENS/ATG/SIDE/10011588-GreyLinenMensPreston-P-1450x1015.jpg'
+    }
+
+(jacket, 50, https://hillcity.gap.com/webcontent/0016/660/330/cn16660330.jpg)
+(shoes, 75, https://media03.toms.com/static/www/images/product/MENS/ATG/SIDE/10011588-GreyLinenMensPreston-P-1450x1015.jpg)
+(jersey, 100, https://cdn11.bigcommerce.com/s-2hny161y9r/images/stencil/1280x1280/products/8744/1671/AJ4648-729-PHSFH001-NDS-A__98793.1539626751.1280.1280__07621.1544209662.png?c=2&imbypass=on&imbypass=on )
+(coat, 80,https://hillcity.gap.com/webcontent/0016/071/735/cn16071735.jpg )

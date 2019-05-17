@@ -2,6 +2,7 @@
     background: #3AD886;
     width: 35%;
     height: 450px;
+    min-width:200px;
     border-radius: 15px;
     display: flex;
     flex-flow: column;
@@ -37,7 +38,7 @@
 }
 
 
-.addToInvenotry{
+.addToInventory{
     width: 120px;
     height: 25px;
     background: #ED6B5A;

@@ -3,29 +3,40 @@ import './App.css';
 import Dashboard from './Components/Dashboard/Dashboard'
 import Form from './Components/Form/Form'
 import Header from './Components/Header/Header'
+import axios from 'axios';
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      inventoryList: [
-        {
-          "name":'jacket',
-          "price": 50,
-          "image_url": 'https://hillcity.gap.com/webcontent/0016/660/330/cn16660330.jpg'
-        },
-        {
-          "name":'shoes',
-          "price": 75,
-          "image_url": 'https://media03.toms.com/static/www/images/product/MENS/ATG/SIDE/10011588-GreyLinenMensPreston-P-1450x1015.jpg'
-        },
-        {
-          "name":'shoes',
-          "price": 75,
-          "image_url": 'https://media03.toms.com/static/www/images/product/MENS/ATG/SIDE/10011588-GreyLinenMensPreston-P-1450x1015.jpg'
-        }
-      ]
+      inventoryList: [],
+      editProductInfo: {}
       }
     }
+    componentDidMount = () => {
+    axios.get('/api/inventory')
+    .then((res) => {
+      this.setState({
+        inventoryList: res.data
+        })
+      })
+    }
+    
+    getInventory = () => {
+      axios.get('/api/inventory')
+    .then((res) => {
+      this.setState({
+        inventoryList: res.data
+        })
+      })
+    }
+
+    editProduct = (product) => {
+      this.setState({
+        editProductInfo:product
+      })
+    }
+    
+    
 
   render() {
       return (
@@ -36,8 +47,12 @@ class App extends Component {
               <div className='mainContainer'>
                   <Dashboard 
                       inventoryList={this.state.inventoryList}
-                      />
-                  <Form />
+                      getInventory={this.getInventory}
+                      editProduct={this.editProduct}/>
+                      
+                  <Form 
+                      getInventory={this.getInventory}
+                      editProductInfo={this.state.editProductInfo}/>
               </div>
           </main>
         </body>

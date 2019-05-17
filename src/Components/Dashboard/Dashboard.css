@@ -1,4 +1,5 @@
 .dashBoardContainer {
-    width: 50%;
+    width: 45%;
+    min-width: 500px;
 }
 
