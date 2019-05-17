@@ -1,0 +1,49 @@
+.formContainer {
+    background: #3AD886;
+    width: 35%;
+    height: 450px;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.formContainer img {
+    width: 240px;
+    height: 160px;
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: space-between
+}
+.formInfoBox {
+    width:90%;
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+}
+
+.cancelButton{
+    width: 60px;
+    height: 25px;
+    background: #ED6B5A;
+    color: black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.addToInvenotry{
+    width: 120px;
+    height: 25px;
+    background: #ED6B5A;
+    color: black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;}

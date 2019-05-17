@@ -1,0 +1,27 @@
+header {
+    height: 60px;
+    width: 100%;
+    background: #AB2A19;
+}
+
+.logo {
+    color: white;
+    display: flex;
+    justify-content: left;
+    margin-left: 75px;
+}
+
+.logo h2 {
+    margin:0px;
+    margin-top: 15px;
+    margin-left: 10px;
+
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    
+
+}
